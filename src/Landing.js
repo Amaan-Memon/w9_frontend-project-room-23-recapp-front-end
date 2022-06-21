@@ -12,3 +12,29 @@
 //4. Footer
 // - Copyright
 // - Links to other pages
+
+import React from 'react';
+import NavBar from '../NavBar/NavBar';
+import RandomQ from '../RandomQuotes/RandomQ';
+import Footer from '../Footer/Footer';
+
+function Landing() {
+    return (
+        <div className="landing">
+            <>
+            <NavBar />
+            <RandomQ />
+            <div>
+                <h1>Welcome to RECAPP</h1>
+                <p>
+                    Here at REcApp, we are dedicated to providing you with the most 
+                    up-to-date Resources to help consolidate your learning from the the SoC Bootcamp.
+                </p>
+            </div>
+            <Footer />
+            </>
+        </div>
+    );
+}
+
+export default Landing;
