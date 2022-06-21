@@ -18,12 +18,11 @@ import NavBar from './Components/NavBar/NavBar';
 import RandomQ from './Components/RandomQuotes/RandomQ';
 import Footer from './Components/Footer/Footer';
 
-function Landing() {
+export function Landing() {
     return (
         <div className="landing">
-            <>
             <NavBar />
-            <RandomQ />
+            {/* <RandomQ /> */}
             <div>
                 <h1>Welcome to RECAPP</h1>
                 <p>
@@ -32,9 +31,7 @@ function Landing() {
                 </p>
             </div>
             <Footer />
-            </>
         </div>
     );
 }
 
-export default Landing;

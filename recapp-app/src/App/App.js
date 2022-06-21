@@ -1,23 +1,21 @@
 import React from "react";
 import './App.css';
-import { Routes, Route } from "react-router-dom";
-import Landing from "../Landing";
-import WeekContent from "../WeekContent";
-import SearchResults from "../SearchResults";
-import Glossary from "../Glossary";
+import { Routes, Link, Route } from "react-router-dom";
+import {Landing} from "../Landing.js";
+import {Content} from "../WeekContent.js";
+import {SearchResults} from "../SearchResults.js";
+import {Glossary} from "../Glossary.js";
 
 function App() {
     return (
-      <div className="App">
-      
+    <div className="App">
       <Routes>
-        <Route path="/" component={Landing} />
-        <Route path="/week" component={WeekContent} />
-        <Route path="/search" component={SearchResults} />
-        <Route path="/glossary" component={Glossary} />
-      </Routes>
-      
-      </div>
+        <Route path="/" element={<Landing/>} />
+        <Route path="/week" element={<Content/>} />
+        <Route path="/search" element={<SearchResults/>} />
+        <Route path="/glossary" element={<Glossary/>} />
+      </Routes> 
+    </div>
     );
   }
   

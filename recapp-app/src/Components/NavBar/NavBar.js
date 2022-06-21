@@ -13,7 +13,7 @@ import GlossaryButton from '../GlossaryButton/Button'
 function NavBar(){
     return(
         <div className="navbar"> 
-            <img className = "logo" src="https://www.freepnglogos.com/uploads"/>
+            <img alt = "" className = "logo" src="../../public/images/logo.jpg"/>
             <SearchBar className= "navbar--search"/>
             <div className="navbar--menus">
                 <WeeksDropDown className="navbar--weeks"/>

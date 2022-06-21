@@ -1,6 +1,6 @@
 import React from "react";
 
-function Glossary () {
+export function Glossary () {
   return (
     <div>
       <h1>Glossary</h1>
@@ -8,4 +8,3 @@ function Glossary () {
   );
 }
 
-export default Glossary;
