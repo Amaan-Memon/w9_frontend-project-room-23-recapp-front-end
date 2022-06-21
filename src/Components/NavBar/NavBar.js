@@ -15,13 +15,10 @@ function NavBar(){
     return(
         <div className="navbar"> 
             <img className = "logo" src="https://www.freepnglogos.com/uploads"/>
-            <div className="search">
-                <SearchBar/>
-                <SearchButton/>
-            </div>
+            <SearchBar className= "navbar--search"/>
             <div className="navbar--menus">
-                <WeeksDropDown className="weeks-drop-down"/>
-                <GlossaryButton className="glossary"/>
+                <WeeksDropDown className="navbar--weeks"/>
+                <GlossaryButton className="navbar--glossary"/>
             </div>
         </div>        
     );
