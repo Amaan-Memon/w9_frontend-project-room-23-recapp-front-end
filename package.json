@@ -16,5 +16,12 @@
   "bugs": {
     "url": "https://github.com/SchoolOfCode/w9_frontend-project-room-23-recapp-front-end/issues"
   },
-  "homepage": "https://github.com/SchoolOfCode/w9_frontend-project-room-23-recapp-front-end#readme"
+  "homepage": "https://github.com/SchoolOfCode/w9_frontend-project-room-23-recapp-front-end#readme",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
 }
