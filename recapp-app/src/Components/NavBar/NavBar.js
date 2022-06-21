@@ -7,9 +7,8 @@
 
 import React from 'react';
 import SearchBar from '../SearchBar/SearchBar'
-import SearchButton from '../SearchButton/SearchButton'
-import WeeksDropDown from '../WeeksDropDown/WeeksDropDown'
-import GlossaryButton from '../GlossaryButton/GlossaryButton'
+import WeeksDropDown from '../WeeksDropDown/DropDown'
+import GlossaryButton from '../GlossaryButton/Button'
 
 function NavBar(){
     return(

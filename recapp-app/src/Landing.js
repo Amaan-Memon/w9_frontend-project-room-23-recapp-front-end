@@ -14,9 +14,9 @@
 // - Links to other pages
 
 import React from 'react';
-import NavBar from '../NavBar/NavBar';
-import RandomQ from '../RandomQuotes/RandomQ';
-import Footer from '../Footer/Footer';
+import NavBar from './Components/NavBar/NavBar';
+import RandomQ from './Components/RandomQuotes/RandomQ';
+import Footer from './Components/Footer/Footer';
 
 function Landing() {
     return (
