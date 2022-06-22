@@ -9,6 +9,7 @@ import React from 'react';
 import SearchBar from '../SearchBar/SearchBar'
 import WeeksDropDown from '../WeeksDropDown/DropDown'
 import GlossaryButton from '../GlossaryButton/Button'
+// import '../../public/images/logo.jpg'
 
 function NavBar(){
     // const handleWeekClick = ()=>{
@@ -16,7 +17,8 @@ function NavBar(){
     // }
     return(
         <div className="navbar"> 
-            <img alt = "logo" className = "logo" src="../../public/images/logo.jpg"/>
+            
+            <img alt = "logo" className = "logo" src={"logo.jpg"}/>
             <SearchBar className= "navbar--search"/>
             <div className="navbar--menus">
                 <WeeksDropDown className="navbar--weeks"/>
