@@ -10,7 +10,7 @@ import SearchBar from '../SearchBar/SearchBar'
 import WeeksDropDown from '../WeeksDropDown/DropDown'
 import GlossaryButton from '../GlossaryButton/Button'
 import './NavBar.css'
-// import '../../public/images/logo.jpg'
+import logo from '../../Images/logo.png'
 
 function NavBar(){
     // const handleWeekClick = ()=>{
