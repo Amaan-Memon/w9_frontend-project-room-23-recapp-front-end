@@ -1,3 +1,13 @@
 .navbar{
+    height: 80px;
     background-color: #001d3d;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.navbar--menus {
+    display: flex;
+    flex-direction: row;
 }
