@@ -23,7 +23,7 @@ export function Landing() {
     return (
         <div className="landing">
             <NavBar />
-            {/* <RandomQ /> */}
+            <RandomQuotes />
                 <div>
                     <h1 className="header">Welcome to RECAPP</h1>
                     <p className="text">
