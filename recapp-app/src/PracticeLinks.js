@@ -3,7 +3,7 @@ import Footer from "./Components/Footer/Footer";
 import NavBar from "./Components/NavBar/NavBar";
 import PracticeLinksCard from "./Components/PracticeLinks/PracticeLinksCard";
 
-function PracticeLinks(){
+export function PracticeLinks(){
     return (
         <div className="practice--links">
             <NavBar/>
@@ -17,4 +17,3 @@ function PracticeLinks(){
         </div>
     )
 }
-export default PracticeLinks;
