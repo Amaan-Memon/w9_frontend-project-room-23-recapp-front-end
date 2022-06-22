@@ -10,7 +10,7 @@ import SearchBar from '../SearchBar/SearchBar'
 import WeeksDropDown from '../WeeksDropDown/DropDown'
 import GlossaryButton from '../GlossaryButton/Button'
 import './NavBar.css'
-// import '../../public/images/logo.jpg'
+import logo from '../../Images/logo.png'
 
 function NavBar(){
     // const handleWeekClick = ()=>{
@@ -18,9 +18,7 @@ function NavBar(){
     // }
     return(
         <div className="navbar"> 
-            
-            <img alt = "logo" className = "logo" src={"logo.jpg"}/>
-            <img alt = "logo" className = "logo" src="https://github.com/SchoolOfCode/w9_frontend-project-room-23-recapp-front-end/blob/main/recapp-app/public/images/logo.jpg"/>
+            <img alt = "logo" className = "logo" src={logo}/>
             <SearchBar className= "navbar--search"/>
             <div className="navbar--menus">
                 <WeeksDropDown className="navbar--weeks"/>
