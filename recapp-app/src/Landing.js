@@ -23,14 +23,14 @@ export function Landing() {
     return (
         <div className="landing">
             <NavBar />
-            <RandomQuotes />
-                <div>
+                <div className="box--container">
                     <h1 className="header">Welcome to RECAPP</h1>
                     <p className="text">
-                        Here at REcApp, we are dedicated to providing you with the most 
-                        up-to-date Resources to help consolidate your learning from the the SoC Bootcamp.
+                        We are dedicated to providing you with the most 
+                        up-to-date resources to help consolidate your learning from the the SoC Bootcamp.
                     </p>
                 </div>
+                <RandomQuotes />
             <Footer />
         </div>
     );

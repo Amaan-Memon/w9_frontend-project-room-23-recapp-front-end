@@ -23,12 +23,10 @@ function RandomQuotes() {
 }, [])
 
 return (
-    <div className="random-quote--container">
-        <h3>Quote of the Day</h3>
-        <ul>
-            <li>{quotes}</li>
-            <li>{author}</li>
-        </ul>
+    <div className="box--container">
+        <h3 className="header">Quote of the Day</h3>
+            <p className="quote--text">{quotes}</p>
+            <p className="quote--text">{author}</p>
     </div>
 )
 }

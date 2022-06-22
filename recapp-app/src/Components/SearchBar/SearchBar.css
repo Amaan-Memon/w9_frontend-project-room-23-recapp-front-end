@@ -1,12 +1,17 @@
+.searchbar--wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
 .searchbar {
-    margin-top: 20px;
     height: 30px;
     width: 400px;
     border-radius: 10px;
 }
 
 .searchbar--button {
-    margin-top: 20px;
     height: 30px;
     width: 60px;
     border-radius: 10px;

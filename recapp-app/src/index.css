@@ -13,16 +13,34 @@ body {
 }
 
 .header {
-  font-size: 50px;
+  font-size: 25px;
   font-family: Helvetica, sans-serif;
   color: #ffd60a;
   font-weight: 100;
 }
 
 .text {
-  font-size: 20px;
+  font-size: 15px;
   font-family: Helvetica, sans-serif;
   color:#ffd60a;
+  text-align: center;
+}
+
+.quote--text {
+  font-size: 15px;
+  font-family: Helvetica, sans-serif;
+  color:#ffd60a;
+  font-style: italic;
+}
+
+.box--container {
+  border: 2px solid #001d3d;
+  margin: 20px 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
 }
 
 

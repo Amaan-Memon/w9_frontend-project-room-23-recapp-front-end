@@ -3,7 +3,7 @@ import './SearchBar.css'
 
 function SearchBar() {
     return (
-        <div>
+        <div className='searchbar--wrapper'>
             <input className=" searchbar" type="text" placeholder="Search resources..."/>
             <button className="searchbar--button">Search</button>
         </div>
