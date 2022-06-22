@@ -15,14 +15,14 @@
 
 import React from 'react';
 import NavBar from './Components/NavBar/NavBar';
-import RandomQ from './Components/RandomQuotes/RandomQ';
+import RandomQuotes from './Components/RandomQuotes/RandomQ';
 import Footer from './Components/Footer/Footer';
 
 export function Landing() {
     return (
         <div className="landing">
             <NavBar />
-            {/* <RandomQ /> */}
+            <RandomQuotes />
             <div>
                 <h1>Welcome to RECAPP</h1>
                 <p>

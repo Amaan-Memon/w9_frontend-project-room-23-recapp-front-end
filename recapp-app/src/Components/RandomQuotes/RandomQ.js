@@ -1,21 +1,41 @@
-// import React from "react";
-// import {useEffect} from "react";
+import React from "react";
+import {useEffect, useState} from "react";
 
-// const [quotes, setQuotes] = useState("");
 
-// React.useEffect(()=>{
-//     async function getQuote(){
-//         const res = await fetch("https://quotes.rest/")
-//         const data = await res.json()
-//         console.log(data)
-//     }
-//     getQuote()
-// })
+function RandomQuotes() {
+    let [quotes, setQuotes] = useState([]);
+    let [author, setAuthor] = useState([]);
 
-// // function RandomQuote(){
-// //     const randomNum = Math.floor(Math.random()* quotes.length)
-// //     const url
-// //     return
-// // }
+    
+    
+    useEffect(()=>{
+        async function getQuote(){
+        const response = await fetch("https://quotes.rest/qod")
+        let data = await response.json()
 
-// export default RandomQ;
+        console.log(data.contents.quotes[0].quote)
+        setQuotes(data.contents.quotes[0].quote)
+
+        console.log(data.contents.quotes[0].author)
+        setAuthor(data.contents.quotes[0].author)
+    }
+    getQuote()
+}, [])
+
+return (
+    <div>
+        <ul>
+            <li>{quotes}</li>
+            <li>{author}</li>
+        </ul>
+    </div>
+)
+}
+
+// function RandomQuote(){
+//     const randomNum = Math.floor(Math.random()* quotes.length)
+//     const url
+//     return
+// }
+
+export default RandomQuotes;
