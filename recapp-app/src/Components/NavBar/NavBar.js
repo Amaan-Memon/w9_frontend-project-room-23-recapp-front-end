@@ -9,6 +9,7 @@ import React from 'react';
 import SearchBar from '../SearchBar/SearchBar'
 import WeeksDropDown from '../WeeksDropDown/DropDown'
 import GlossaryButton from '../GlossaryButton/Button'
+import './NavBar.css'
 // import '../../public/images/logo.jpg'
 
 function NavBar(){
