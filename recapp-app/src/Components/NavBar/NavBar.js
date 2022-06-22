@@ -6,6 +6,7 @@
 //4. Glossary button
 
 import React from 'react';
+import { useNavigate } from 'react-router';
 import SearchBar from '../SearchBar/SearchBar'
 import WeeksDropDown from '../WeeksDropDown/DropDown'
 import GlossaryButton from '../GlossaryButton/Button'
@@ -13,13 +14,11 @@ import './NavBar.css'
 import logo from '../../Images/logo.png'
 
 function NavBar(){
-    // const handleWeekClick = ()=>{
-        
-    // }
+    const navigate = useNavigate()
     return(
         <div className="navbar"> 
             
-            <img alt = "logo" className = "logo" src={"logo.jpg"}/>
+            <img alt = "logo" className = "logo" src={logo} onClick={()=>{navigate('/')}}/>
             
             <SearchBar className= "navbar--search"/>
             <div className="navbar--menus">
