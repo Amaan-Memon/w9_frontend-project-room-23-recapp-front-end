@@ -9,7 +9,6 @@ function GlossaryCard(){
         async function getGlossary(){
         const response = await fetch("http://localhost:5500/glossary")
         let data = await response.json()
-
         console.log(data.payload[0])
         setGlossary(data)
 

@@ -12,6 +12,7 @@ import WeeksDropDown from '../WeeksDropDown/DropDown'
 import GlossaryButton from '../GlossaryButton/Button'
 import './NavBar.css'
 import logo from '../../Images/logo.png'
+import PracticeLinksButton from '../PracticeLinksButton/PracticeLinks';
 
 function NavBar(){
     const navigate = useNavigate()
@@ -24,6 +25,7 @@ function NavBar(){
             <div className="navbar--menus">
                 <WeeksDropDown className="navbar--weeks"/>
                 <GlossaryButton className="navbar--glossary"/>
+                <PracticeLinksButton className="navbar--practice-links"/>
             </div>
         </div>        
     );
