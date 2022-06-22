@@ -16,7 +16,7 @@ function NavBar(){
     // }
     return(
         <div className="navbar"> 
-            <img alt = "logo" className = "logo" src="../../public/images/logo.jpg"/>
+            <img alt = "logo" className = "logo" src="https://github.com/SchoolOfCode/w9_frontend-project-room-23-recapp-front-end/blob/main/recapp-app/public/images/logo.jpg"/>
             <SearchBar className= "navbar--search"/>
             <div className="navbar--menus">
                 <WeeksDropDown className="navbar--weeks"/>

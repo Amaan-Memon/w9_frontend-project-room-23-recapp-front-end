@@ -5,8 +5,7 @@ import {Landing} from "../Landing.js";
 import {Content} from "../WeekContent.js";
 import {SearchResults} from "../SearchResults.js";
 import {Glossary} from "../Glossary.js";
-import PracticeLinks from "../PracticeLinks";
-
+import {PracticeLinks} from "../PracticeLinks.js"
 function App() {
     return (
     <div className="App">
