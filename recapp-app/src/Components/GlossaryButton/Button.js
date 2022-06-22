@@ -1,11 +1,13 @@
 import React from "react";
+import './Button.css'
 
-function GlossaryButton(){
-    return(
+function GlossaryButton() {
+    return (
         <div >
-            <button className="glossary-button">
-                <a href="">Glossary</a>
-            </button>
+            <a href="">
+                <button className="glossary-button">Glossary
+                </button>
+            </a>
         </div>
     );
 }
