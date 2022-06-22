@@ -1,4 +1,4 @@
-import React from "react";
+/* import React from "react";
 import {useEffect} from "react";
 
 const [quotes, setQuotes] = useState("");
@@ -18,4 +18,4 @@ function RandomQuote(){
     return
 }
 
-export default RandomQuote;
+*/
