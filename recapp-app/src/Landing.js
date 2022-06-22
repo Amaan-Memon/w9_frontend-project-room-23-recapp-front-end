@@ -17,19 +17,20 @@ import React from 'react';
 import NavBar from './Components/NavBar/NavBar';
 import RandomQuotes from './Components/RandomQuotes/RandomQ';
 import Footer from './Components/Footer/Footer';
+import './index.css'
 
 export function Landing() {
     return (
         <div className="landing">
             <NavBar />
-            <RandomQuotes />
-            <div>
-                <h1>Welcome to RECAPP</h1>
-                <p>
-                    Here at REcApp, we are dedicated to providing you with the most 
-                    up-to-date Resources to help consolidate your learning from the the SoC Bootcamp.
-                </p>
-            </div>
+            {/* <RandomQ /> */}
+                <div>
+                    <h1 className="header">Welcome to RECAPP</h1>
+                    <p className="text">
+                        Here at REcApp, we are dedicated to providing you with the most 
+                        up-to-date Resources to help consolidate your learning from the the SoC Bootcamp.
+                    </p>
+                </div>
             <Footer />
         </div>
     );

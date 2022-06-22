@@ -1,0 +1,13 @@
+.searchbar {
+    margin-top: 20px;
+    height: 30px;
+    width: 400px;
+    border-radius: 10px;
+}
+
+.searchbar--button {
+    margin-top: 20px;
+    height: 30px;
+    width: 60px;
+    border-radius: 10px;
+}
