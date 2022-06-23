@@ -1,7 +1,7 @@
 import React from "react";
 import "./Card.css"
 
-function ResourceCard({resourcesLink, resourcesTopic, resourcesValue, resourcesWeek}){
+function ResourceCard({resourcesLink, resourcesTopic, resourcesValue, resourcesWeek, resourcesImage}){
     return (
         <div className="content--card">
             <img className="card--image" href="" alt="Resource"/>

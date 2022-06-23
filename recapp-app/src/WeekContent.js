@@ -7,10 +7,16 @@ import {useEffect, useState} from "react"
 export function Content () {
 
   const [resources, setResources] = useState([]);
+  const [url, setUrl] = useState(`http://localhost:5500/resources/`)
+  
 
+  const handleClick = (i)=>{
+    setUrl(`http://localhost:5500/resources/week/${i}`)
+  }
+  
   useEffect(()=>{
     async function getResources(){
-    const response = await fetch("http://localhost:5500/resources")
+    const response = await fetch(url)
     let data = await response.json()
     console.log(data.payload)
     setResources(data.payload)
@@ -18,13 +24,18 @@ export function Content () {
 
 }
 getResources()
-}, [])
-
+}, [url])
+  
   return (
     <div>
       <NavBar/>
-      <h1>Content</h1>
-      <h3>Week 1</h3>
+      <h1>Click on the week to see resources from... </h1>
+      <button onClick={()=>{handleClick(1)}}>Week 1</button>
+      <button onClick={()=>{handleClick(2)}}>Week 2</button>
+      <button onClick={()=>{handleClick(3)}}>Week 3</button>
+      <button onClick={()=>{handleClick(4)}}>Week 4</button>
+      <button onClick={()=>{handleClick(5)}}>Week 5</button>
+      <button onClick={()=>{handleClick(6)}}>Week 6</button>
       <div>
         {
         resources.map(function (term) {
@@ -35,6 +46,7 @@ getResources()
             resourcesTopic={term.topic}
             resourcesWeek={term.week}
             resourcesValue={term.value}
+            resourcesImage={term.images}
             />
           );
         })
