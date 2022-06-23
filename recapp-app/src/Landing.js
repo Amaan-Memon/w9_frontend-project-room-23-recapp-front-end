@@ -22,7 +22,7 @@ import './index.css'
 export function Landing() {
     return (
         <div className="landing">
-            <NavBar />
+            {/* <NavBar /> */}
                 <div className="box--container">
                     <h1 className="header">Welcome to RECAPP</h1>
                     <p className="text">

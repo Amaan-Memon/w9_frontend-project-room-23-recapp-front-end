@@ -28,7 +28,7 @@ getResources()
   
   return (
     <div>
-      <NavBar/>
+      {/* <NavBar/> */}
       <h1 className="page--header">Click on the week to see resources from... </h1>
       <button className="week--button" onClick={()=>{handleClick(1)}}>Week 1</button>
       <button className="week--button" onClick={()=>{handleClick(2)}}>Week 2</button>

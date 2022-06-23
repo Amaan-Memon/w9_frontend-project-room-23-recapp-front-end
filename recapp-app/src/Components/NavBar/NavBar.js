@@ -15,14 +15,14 @@ import logo from '../../Images/logo.png'
 import PracticeLinksButton from '../PracticeLinksButton/PracticeLinks';
 
 
-function NavBar(){
+function NavBar({setUserValue}){
     const navigate = useNavigate()
     return(
         <div className="navbar"> 
             
             <img alt = "logo" className = "logo" src={logo} onClick={()=>{navigate('/')}}/>
             
-            <SearchBar className= "navbar--search" />
+            <SearchBar className= "navbar--search" setUserValue = {setUserValue} />
             <div className="navbar--menus">
                 <WeeksDropDown className="navbar--weeks"/>
                 <GlossaryButton className="navbar--glossary"/>

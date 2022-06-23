@@ -3,25 +3,52 @@
 //2. 
 
 
-import React from "react";
+import React, { useState, useEffect } from "react";
 import NavBar from "./Components/NavBar/NavBar";
 import ResourceCard from "./Components/ResourceCard/ResourceCard";
 import GlossaryCard from "./Components/GlossaryCard/GlossaryCard";
 import Footer from "./Components/Footer/Footer";
 
-export function SearchResults() {
+export function SearchResults({userValue}) {
+  const[results, setResults] = useState([]);
+
+  useEffect(()=>{
+    console.log(userValue);
+    try {
+      async function getData(){
+          const response = await fetch(`http://localhost:5500/resources/search?tags=${userValue}`);
+          const data = await response.json();
+          // console.log(actualData)
+          // console.log(url)
+          setResults(data.payload)
+          console.log(data)
+      }
+      getData();
+    } catch (error) {
+      
+    }
+}, [userValue]);
+
   return (
     <div>
-      <NavBar/>
+     {/* <NavBar/> */}
       <h2>Search Results:</h2>
       <h4>You searched for "SearchResult"...</h4>
       <div>
-        <GlossaryCard/>
-        <ResourceCard/>
-        <ResourceCard/>
-        <ResourceCard/>
-        <ResourceCard/>
-        <ResourceCard/>
+      {
+        results.map(function (term) {
+          return(
+            <ResourceCard
+            key={term.id}
+            resourcesLink={term.link}
+            resourcesTopic={term.topic}
+            resourcesWeek={term.week}
+            resourcesValue={term.value}
+            resourcesImage={term.images}
+            />
+          );
+        })
+      }
       </div>
       <Footer/>
     </div>

@@ -6,7 +6,7 @@ import NavBar from "./Components/NavBar/NavBar";
 export function PracticeLinks(){
     return (
         <div>
-            <NavBar/>
+            {/* <NavBar/> */}
             <h2 className="page--header">Practice Links</h2>
                 <div>
                     <p className="page--text">Code Wars<br/><a className="page--text" href="https://codewars.com">https://codewars.com</a></p>

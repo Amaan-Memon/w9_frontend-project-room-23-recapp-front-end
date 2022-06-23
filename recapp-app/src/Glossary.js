@@ -24,7 +24,6 @@ export function Glossary () {
 
   return (
     <div>
-      <NavBar/>
       <h1 className="page--header">Glossary</h1>
       <div>
       {

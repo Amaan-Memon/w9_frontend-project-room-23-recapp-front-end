@@ -23,7 +23,7 @@ export async function getSearchedResources(userInput){
     if(userInput === null){
         return "Search result does not exist"
     }
-    const res = await pool.query(`SELECT link, topic, week FROM resources WHERE tags LIKE '%${userInput}%'`)
+    const res = await pool.query(`SELECT * FROM resources WHERE tags LIKE '%${userInput}%'`)
     console.log(`returned resources matching search: ${JSON.stringify(res.rows)}`)
     return res.rows
 }
