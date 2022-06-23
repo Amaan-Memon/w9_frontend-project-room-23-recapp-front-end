@@ -8,8 +8,8 @@ export function Glossary () {
   return (
     <div>
       <NavBar/>
-      <h1>Glossary</h1>
-      <div>
+      <h1 className="page--header">Glossary</h1>
+      <div className="page--text">
       <GlossaryCard/>
       <GlossaryCard/>
       <GlossaryCard/>
