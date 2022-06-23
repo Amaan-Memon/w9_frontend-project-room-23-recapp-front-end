@@ -8,9 +8,8 @@ export function Content () {
   return (
     <div>
       <NavBar/>
-      <h1>Content</h1>
-      <h3>Week 1</h3>
-      <div>
+      <h1 className="page--header">Week 1</h1>
+      <div className="page--text">
         <ResourceCard/>
         <ResourceCard/>
         <ResourceCard/>
