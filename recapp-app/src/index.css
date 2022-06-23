@@ -8,26 +8,24 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   margin: 0;
-
-
 }
 
 .header {
-  font-size: 25px;
+  font-size: 35px;
   font-family: Helvetica, sans-serif;
   color: #ffd60a;
   font-weight: 100;
 }
 
 .text {
-  font-size: 15px;
+  font-size: 20px;
   font-family: Helvetica, sans-serif;
   color:#ffd60a;
   text-align: center;
 }
 
 .quote--text {
-  font-size: 15px;
+  font-size: 20px;
   font-family: Helvetica, sans-serif;
   color:#ffd60a;
   font-style: italic;
@@ -50,7 +48,8 @@ body {
   font-family: Helvetica, sans-serif;
   color: #ffd60a;
   font-weight: 100;
-  margin-left: 25px;
+  margin-left: 30px;
+  margin-top: 20px;
 }
 
 .page--text {
@@ -62,11 +61,11 @@ body {
 }
 
 .week--button {
-    background-color: transparent;
-    border-color: transparent;
-    font-size: 20px;
-    font-family: Helvetica, sans-serif;
-    color: #ffd60a;
-    text-decoration: underline;
-    margin-left: 25px;
+  background-color: transparent;
+  border-color: transparent;
+  font-size: 20px;
+  font-family: Helvetica, sans-serif;
+  color: #ffd60a;
+  text-decoration: underline;
+  margin-left: 25px;
 }
