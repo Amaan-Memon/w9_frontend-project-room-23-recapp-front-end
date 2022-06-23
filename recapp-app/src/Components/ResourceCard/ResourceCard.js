@@ -8,7 +8,9 @@ function ResourceCard({resourcesLink, resourcesTopic, resourcesValue, resourcesW
                 <img className="card--image" src={resourcesImage} alt="Resource"/>
             </div>
             <div>
-                <a target="_blank" rel="noreferrer noopener" className="topic" href={resourcesLink}><h2 className="topic">{resourcesTopic}</h2></a>
+                <a target="_blank" rel="noreferrer noopener" className="topic" href={resourcesLink}>
+                    <h2 className="topic">{resourcesTopic[0].toUpperCase() + resourcesTopic.substring(1)}</h2>
+                </a>
                 <h3 className="resources">Week {resourcesWeek}</h3>
                 <h4 className="resources--value">{resourcesValue} Likes</h4>
             </div>
