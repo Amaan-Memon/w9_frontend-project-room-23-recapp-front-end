@@ -2,12 +2,17 @@
     color: #ffd60a
 }
 
+.resources--order {
+    display: flex;
+    flex-direction: row;
+}
+
 .topic {
     font-size: 20px;
     font-weight: 300;
     font-family: Helvetica, sans-serif;
     color:#ffd60a;
-    margin-left: 45px;
+    margin-left: 80px;
 }
 
 .resources {
@@ -15,7 +20,7 @@
     font-weight: 300;
     font-family: Helvetica, sans-serif;
     color:#ffd60a;
-    margin-left: 45px;
+    margin-left: 80px;
 }
 
 .resources--value {
@@ -23,5 +28,13 @@
     font-weight: 300;
     font-family: Helvetica, sans-serif;
     color:#ffd60a;
+    margin-left: 80px;
+}
+
+.card--image {
+    height: 100px;
+    width: 100px;
+    margin-top: 30px;
     margin-left: 45px;
+    object-fit: contain;
 }
