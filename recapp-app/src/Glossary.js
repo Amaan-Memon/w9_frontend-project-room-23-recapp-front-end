@@ -25,7 +25,7 @@ export function Glossary () {
   return (
     <div>
       <NavBar/>
-      <h1>Glossary</h1>
+      <h1 className="page--header">Glossary</h1>
       <div>
       {
         glossary.map(function (term) {
