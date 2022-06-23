@@ -13,7 +13,7 @@ function SearchBar() {
     console.log(url)
     const handleClick = ()=>{
         setUrl(`http://localhost:5500/resources/search?tags=${query}`)
-        async function navResults() {navigate('/search')}
+        async function navResults() {navigate('/search',)}
         navResults()
     }
 
