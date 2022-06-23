@@ -1,13 +1,14 @@
 import React from "react";
+import './GlossaryCard.css'
 
 
 function GlossaryCard({ glossaryWord, glossaryDefinition }){
 
 
     return(
-        <div className="glossary--card" id="Glossary">
-            <h3>{glossaryWord}</h3>
-            <h4>{glossaryDefinition}</h4>
+        <div id="Glossary">
+            <h3 className="glossary--word">{glossaryWord}</h3>
+            <h4 className="glossary--definition">{glossaryDefinition}</h4>
         </div>
     )
 }
