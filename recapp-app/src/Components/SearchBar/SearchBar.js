@@ -2,14 +2,17 @@ import React, { useEffect, useState } from 'react';
 import './SearchBar.css';
 import {useNavigate} from 'react-router-dom';
 
+
+
 function SearchBar() {
     const navigate = useNavigate();
     const [data, setData] = useState([]);
+    
     const [query, setQuery] = useState('');
-    const [url, setUrl]= useState('https://localhost:5500/resources/');
-
+    const [url, setUrl]= useState('http://localhost:5500/resources/', );
+    console.log(url)
     const handleClick = ()=>{
-        setUrl(`https://localhost:5500/resources/search?tags=${query}`)
+        setUrl(`http://localhost:5500/resources/search?tags=${query}`)
         async function navResults() {navigate('/search')}
         navResults()
     }
@@ -17,10 +20,10 @@ function SearchBar() {
     useEffect(()=>{
         async function getData(){
             const response = await fetch(url);
-            const actualData = await response.json();
-            console.log(actualData)
-            console.log(url)
-            setData(actualData.payload)
+            const data = await response.json();
+            // console.log(actualData)
+            // console.log(url)
+            setData(data.payload)
         }
         getData();
     }, [url]);
