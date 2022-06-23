@@ -21,12 +21,18 @@ export function Glossary () {
   getGlossary()
 }, [])
 
+  const seen = []
+  const alphabetical = (glossary || []).sort((a, b) => {
+    return a.word.localeCompare(b.word);
+ });
   return (
     <div>
       <h1 className="page--header">Glossary</h1>
       <div>
       {
-        glossary.map(function (term) {
+        alphabetical.map(function (term) {
+          if (seen.includes(term.word)) return
+          seen.push(term.word)
           return(
             <GlossaryCard
             key={term.id}
