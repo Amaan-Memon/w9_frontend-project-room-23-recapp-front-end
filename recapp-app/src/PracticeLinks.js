@@ -1,12 +1,10 @@
 import React from "react";
 import Footer from "./Components/Footer/Footer";
-import NavBar from "./Components/NavBar/NavBar";
 
 
 export function PracticeLinks(){
     return (
         <div>
-            {/* <NavBar/> */}
             <h2 className="page--header">Practice Links</h2>
                 <div>
                     <p className="page--text">Code Wars<br/><a target="_blank" rel="noreferrer noopener" className="page--text" href="https://codewars.com">https://codewars.com</a></p>

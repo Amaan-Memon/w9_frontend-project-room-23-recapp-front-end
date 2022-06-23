@@ -1,5 +1,4 @@
 import React from "react"; 
-import NavBar from "./Components/NavBar/NavBar"
 import ResourceCard from "./Components/ResourceCard/ResourceCard"
 import Footer from "./Components/Footer/Footer"
 import {useEffect, useState} from "react"

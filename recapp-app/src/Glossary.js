@@ -1,7 +1,6 @@
 import React from "react";
 import Footer from "./Components/Footer/Footer";
 import GlossaryCard from "./Components/GlossaryCard/GlossaryCard";
-import NavBar from "./Components/NavBar/NavBar";
 import {useEffect, useState} from "react"
 
 

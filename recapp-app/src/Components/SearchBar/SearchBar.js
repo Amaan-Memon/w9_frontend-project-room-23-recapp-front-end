@@ -7,6 +7,7 @@ import {useNavigate} from 'react-router-dom';
 function SearchBar({setUserValue}) {
     const navigate = useNavigate();
     const [data, setData] = useState([]);
+    console.log(data)
     
     const [query, setQuery] = useState('');
     const [url, setUrl]= useState('http://localhost:5500/resources/', );
