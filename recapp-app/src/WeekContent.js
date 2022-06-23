@@ -5,7 +5,6 @@ import Footer from "./Components/Footer/Footer"
 import {useEffect, useState} from "react"
 
 export function Content () {
-  //const term = { id: 0, link: "https://google.com", topic: "MyTopic", week: 3, value: 532, images: "https://i.pinimg.com/originals/fa/c5/9c/fac59cceb286c0e57ff3ff654938ef20.jpg" }
   const [resources, setResources] = useState([]);
   const [url, setUrl] = useState(`http://localhost:5500/resources/`)
   
