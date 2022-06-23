@@ -5,7 +5,7 @@ import Footer from "./Components/Footer/Footer"
 import {useEffect, useState} from "react"
 
 export function Content () {
-
+  //const term = { id: 0, link: "https://google.com", topic: "MyTopic", week: 3, value: 532, images: "https://i.pinimg.com/originals/fa/c5/9c/fac59cceb286c0e57ff3ff654938ef20.jpg" }
   const [resources, setResources] = useState([]);
   const [url, setUrl] = useState(`http://localhost:5500/resources/`)
   
@@ -29,13 +29,13 @@ getResources()
   return (
     <div>
       <NavBar/>
-      <h1>Click on the week to see resources from... </h1>
-      <button onClick={()=>{handleClick(1)}}>Week 1</button>
-      <button onClick={()=>{handleClick(2)}}>Week 2</button>
-      <button onClick={()=>{handleClick(3)}}>Week 3</button>
-      <button onClick={()=>{handleClick(4)}}>Week 4</button>
-      <button onClick={()=>{handleClick(5)}}>Week 5</button>
-      <button onClick={()=>{handleClick(6)}}>Week 6</button>
+      <h1 className="page--header">Click on the week to see resources from... </h1>
+      <button className="week--button" onClick={()=>{handleClick(1)}}>Week 1</button>
+      <button className="week--button" onClick={()=>{handleClick(2)}}>Week 2</button>
+      <button className="week--button" onClick={()=>{handleClick(3)}}>Week 3</button>
+      <button className="week--button" onClick={()=>{handleClick(4)}}>Week 4</button>
+      <button className="week--button" onClick={()=>{handleClick(5)}}>Week 5</button>
+      <button className="week--button" onClick={()=>{handleClick(6)}}>Week 6</button>
       <div>
         {
         resources.map(function (term) {
