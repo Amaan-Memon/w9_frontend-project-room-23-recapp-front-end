@@ -1,12 +1,13 @@
 import React from "react";
+import "./Card.css"
 
 function ResourceCard({resourcesLink, resourcesTopic, resourcesValue, resourcesWeek}){
     return (
         <div className="content--card">
             <img className="card--image" href="" alt="Resource"/>
-            <h4 href={resourcesLink}>{resourcesTopic}</h4>
-            <h3>{resourcesWeek}</h3>
-            <h2>{resourcesValue}</h2>
+            <a href={resourcesLink}><h4>{resourcesTopic}</h4></a>
+            <h3>Week {resourcesWeek}</h3>
+            <h2>{resourcesValue} Likes</h2>
         </div>
     )
 }

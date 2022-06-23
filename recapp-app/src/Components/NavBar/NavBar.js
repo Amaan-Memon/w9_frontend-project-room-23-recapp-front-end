@@ -13,7 +13,7 @@ import GlossaryButton from '../GlossaryButton/Button'
 import './NavBar.css'
 import logo from '../../Images/logo.png'
 import PracticeLinksButton from '../PracticeLinksButton/PracticeLinks';
-import 'tachyons'
+
 
 function NavBar(){
     const navigate = useNavigate()
