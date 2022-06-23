@@ -5,15 +5,17 @@ import PracticeLinksCard from "./Components/PracticeLinks/PracticeLinksCard";
 
 export function PracticeLinks(){
     return (
-        <div className="practice--links">
+        <div>
             <NavBar/>
-            <h2>Practice Links</h2>
-            <PracticeLinksCard/>
-            <PracticeLinksCard/>
-            <PracticeLinksCard/>
-            <PracticeLinksCard/>
-            <PracticeLinksCard/>
-            <Footer/>
+            <h2 className="page--header">Practice Links</h2>
+                <div className="page--text">
+                    <PracticeLinksCard/>
+                    <PracticeLinksCard/>
+                    <PracticeLinksCard/>
+                    <PracticeLinksCard/>
+                    <PracticeLinksCard/>
+                    <Footer/>
+                </div>
         </div>
     )
 }

@@ -45,5 +45,19 @@ body {
 
 }
 
+.page--header {
+  font-size: 25px;
+  font-family: Helvetica, sans-serif;
+  color: #ffd60a;
+  font-weight: 100;
+  margin-left: 20px;
+}
+
+.page--text {
+  font-size: 15px;
+  font-family: Helvetica, sans-serif;
+  color:#ffd60a;
+  margin: 40px;
+}
 
 
