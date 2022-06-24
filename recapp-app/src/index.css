@@ -60,7 +60,17 @@ body {
   margin-top: 30px;
 }
 
+.link--text {
+  cursor: pointer;
+  font-size: 15px;
+  font-family: Helvetica, sans-serif;
+  color:#ffd60a;
+  margin-left: 45px;
+  margin-top: 30px;
+}
+
 .week--button {
+  cursor: pointer;
   background-color: transparent;
   border-color: transparent;
   font-size: 20px;
@@ -68,4 +78,8 @@ body {
   color: #ffd60a;
   text-decoration: underline;
   margin-left: 25px;
+}
+
+.logo {
+  cursor: pointer;
 }
