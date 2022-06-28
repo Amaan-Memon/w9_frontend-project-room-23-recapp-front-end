@@ -1,3 +1,26 @@
+export const glossary = [
+  {
+      word: "",
+      description: "",
+    },
+    {
+      word: "",
+      description: "",
+    },
+    {
+      word: "",
+      description: "",
+    },
+    {
+      word: "",
+      description: "",
+    },
+    {
+      word: "",
+      description: "",
+    }
+  ]
+
 export const resources = [
     {
         link: 'https://reactjs.org/docs/getting-started.html',
@@ -40,3 +63,5 @@ export const resources = [
         revelant: true,
       }
     ]
+
+ 
