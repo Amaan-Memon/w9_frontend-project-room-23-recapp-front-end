@@ -1,5 +1,7 @@
 ## Front End
 
+---
+
 ### React
 
 The front end was created using React as a framework. React is a JavaScript library for building user interfaces:
@@ -13,7 +15,9 @@ Get started with [React](https://reactjs.org/docs/getting-started.html).
 
 ### Component Tree
 
-For each component, create a folder within the 'Components' folder and hav a .js and corresponding .css file within it.
+For each component, create a folder within the 'Components' folder and create a .js and corresponding .css file within it.
+
+![Component Tree](src/Images/componentTree.png)
 
 - src
     - Components
@@ -21,8 +25,17 @@ For each component, create a folder within the 'Components' folder and hav a .js
             - newcomponent.css
             - newcomponent.js
 
+---
 
-![Component Tree](src/Images/componentTree.png)
+### Features 
+
+- Landing Page
+- Weeks Page
+- Glossary Page
+- Practice Links Page
+- Search Results Page
+- Search Bar
+- Navigation Bar
 
 ---
 
