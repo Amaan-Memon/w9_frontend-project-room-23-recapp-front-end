@@ -1,11 +1,11 @@
 import React from "react";
 import "./Card.css"
 
-function ResourceCard({resourcesLink, resourcesTopic, resourcesValue, resourcesWeek, resourcesImage}){
+function ResourceCard({ resourcesLink, resourcesTopic, resourcesValue, resourcesWeek, resourcesImage }) {
     return (
-        <div className="resources--order"> 
+        <div className="resources--order">
             <div>
-                <img className="card--image" src={resourcesImage} alt="Resource"/>
+                <img className="card--image" src={resourcesImage} alt="Resource" />
             </div>
             <div>
                 <a target="_blank" rel="noreferrer noopener" className="topic" href={resourcesLink}>
