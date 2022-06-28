@@ -1,4 +1,12 @@
+<<<<<<< HEAD
+// useEffect to fetch a quote from the API and set
+// the quote and author displayed on the landing page
+
+import React from "react";
+import {useEffect, useState} from "react";
+=======
 import React, { useEffect, useState } from "react";
+>>>>>>> 7c8e3c1f835ed7dfb6b2128d844ec156c234a52e
 
 
 function RandomQuotes() {

@@ -1,9 +1,22 @@
+//Search Bar
+// - Created a function called SearchBar which takes in the setUserValue 
+//   function as a parameter 
+// - useEffect is used to fetch data async from the backend, format 
+//   it as a JSON and then setData function sets state to the data's 
+//   payload
+// - Returns an input and a search button which redirects through  
+//   useNavigate to search result page 
+
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './SearchBar.css';
 
+<<<<<<< HEAD
+function SearchBar({setUserValue}) {
+=======
 
 function SearchBar({ setUserValue }) {
+>>>>>>> 7c8e3c1f835ed7dfb6b2128d844ec156c234a52e
     const navigate = useNavigate();
     const [data, setData] = useState([]);
     console.log(data)
