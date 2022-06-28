@@ -28,19 +28,56 @@
 
         Create an account if you haven't already, create a new App, and select Heroku Postgres as an add-on. Then, from settings, access your Database Credentials. We will be using these later.
 
-        ---
+    ---
 
-    * *CREATING A NEW TABLE* 
+    * *CONNECTING YOUR DATABASE* 
 
         Clone this repository and open it up in your favourite code editor. Our project is split into two main folders: 'backend' and 'recapp-app'.
 
-        Navigate into the 'backend' folder, and install the required node modules.
+        In your terminal, navigate into the 'backend' folder, and install the required node modules.
 
         ```
-        Noahs-MacBook-Air:w9_frontend-project-room-23-recapp-front-end noahaldhous$ cd backend
+        noahaldhous$ cd backend
         Noahs-MacBook-Air:backend noahaldhous$ npm i
         ```
+
+        This may take a few minutes, so feel free to lean back, check your phone- maybe look out the window wistfully.
+
+        Once that's all done, go ahead and create a new file in the root of this folder. call it 
         
+        ```
+        .env
+        ```
+
+        Now we are going to add your Database credentials to this file.
+        
+        Using the template below, take the relevant information from your Heroku Database and add it in, so it will look something like this:
+
+        ```
+        PGUSER = "eyjafjallajokull"
+        PGHOST = "ab1-23-456-7-89.eu-west-1.compute.amazonaws.com"
+        PGDATABASE = "abcde1fg23h4hi"
+        PGPASSWORD = "password123"
+        PGPORT = 1234
+        ```
+
+
+        Congratulations- your Database is now connected!
+
+        **Just a heads up- Heroku is an amazing service for providing free Database hosting- but the trade-off is that the credentials will be randomly changed from time to time. Every time you come back to this app, just double check that your Heroku credentials match up with your .env file.**
+        
+    ---
+
+    * *CREATING YOUR TABLES*
+    
+        Your database is now connected to the server- but you don't have any tables in the database yet. 
+
+        To make this easy for you, our backend has pre-written scripts for creating and populating these tables. 
+        
+        All you need to do is run them!
+
+        In your terminal, run the following scripts (you can find these in the package.json)
+
 
  * Adding your credentials
  * Populating the Database
