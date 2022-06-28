@@ -1,9 +1,9 @@
 import React from "react";
 
-function PracticeLinksCard(){
+function PracticeLinksCard() {
     return (
         <div className="practice-links--card">
-            <img className="practice-links--image" href="" alt="Practice Link"/>
+            <img className="practice-links--image" href="" alt="Practice Link" />
             <h4 href="">Practice Link</h4>
         </div>
     )
