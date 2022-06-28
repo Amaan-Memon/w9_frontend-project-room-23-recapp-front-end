@@ -11,8 +11,10 @@ function SearchBar({ setUserValue }) {
     const [query, setQuery] = useState('');
     const [url, setUrl] = useState('http://localhost:5500/resources/',);
     console.log(url)
-    const handleClick = () => {
-        setUserValue(query)
+
+    const handleClick = ()=>{
+        setUserValue(query.toLowerCase())
+
         setUrl(`http://localhost:5500/resources/search?tags=${query}`)
         async function navResults() { navigate('/search',) }
         navResults()
