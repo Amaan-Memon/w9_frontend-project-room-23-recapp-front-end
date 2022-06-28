@@ -3,11 +3,11 @@ import ReactDOM from 'react-dom';
 import SearchBar from '../Components/SearchBar/SearchBar';
 import App from './App';
 
-// test('renders learn react link', () => {
-//   render(<App />);
-//   const linkElement = screen.getByText(/learn react/i);
-//   expect(linkElement).toBeInTheDocument();
-// });
+test('renders learn react link', () => {
+  render(<App />);
+  const linkElement = screen.getByText(/learn react/i);
+  expect(linkElement).toBeInTheDocument();
+});
 
 describe("Filter function", () => {
   test("it should filter by a search term (link)", () => {
