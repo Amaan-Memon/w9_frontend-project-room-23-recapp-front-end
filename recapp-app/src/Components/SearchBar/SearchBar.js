@@ -19,15 +19,9 @@ function SearchBar({ setUserValue }) {
         async function navResults() { navigate('/search',) }
         navResults()
     }
-<<<<<<< HEAD
- //could posible use useDebounce to refractor the amount of api requests sent.
-    useEffect(()=>{
-        async function getData(){
-=======
 
     useEffect(() => {
         async function getData() {
->>>>>>> cef5d172e75a0d08c68c2eadfc9b043045bba58e
             const response = await fetch(url);
             const data = await response.json();
             setData(data.payload)
