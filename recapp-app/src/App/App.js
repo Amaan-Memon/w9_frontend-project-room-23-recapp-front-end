@@ -1,5 +1,4 @@
-import React from "react";
-import './App.css';
+import React, { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import {Landing} from "../Landing.js";
 import {Content} from "../WeekContent.js";
@@ -7,7 +6,6 @@ import {SearchResults} from "../SearchResults.js";
 import {Glossary} from "../Glossary.js";
 import {PracticeLinks} from "../PracticeLinks.js"
 import NavBar from "../Components/NavBar/NavBar";
-import {useState} from 'react';
 
 function App() {
   const [userValue, setUserValue] = useState('')
@@ -15,7 +13,7 @@ function App() {
     <div className="App">
         <NavBar setUserValue = {setUserValue}/>
       <Routes>
-        <Route path="/" element={<Landing/>} />
+        <Route path="/" element={<Landing/>}  id= "landing"/>
         <Route path="/week" element={<Content/>} />
         <Route path="/search" element={<SearchResults userValue = {userValue}/>} />
         <Route path="/glossary" element={<Glossary/>} />

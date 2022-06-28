@@ -18,25 +18,25 @@ import { useNavigate } from 'react-router';
 import SearchBar from '../SearchBar/SearchBar'
 import WeeksDropDown from '../WeeksDropDown/DropDown'
 import GlossaryButton from '../GlossaryButton/Button'
-import './NavBar.css'
-import logo from '../../Images/logo.png'
 import PracticeLinksButton from '../PracticeLinksButton/PracticeLinks';
+import logo from '../../Images/logo.png'
+import './NavBar.css'
 
 
-function NavBar({setUserValue}){
+function NavBar({ setUserValue }) {
     const navigate = useNavigate()
-    return(
-        <div className="navbar"> 
-            
-            <img alt = "logo" className = "logo" src={logo} onClick={()=>{navigate('/')}}/>
-            
-            <SearchBar className= "navbar--search" setUserValue = {setUserValue} />
+    return (
+        <div className="navbar">
+
+            <img alt="logo" className="logo" src={logo} onClick={() => { navigate('/') }} />
+
+            <SearchBar className="navbar--search" setUserValue={setUserValue} />
             <div className="navbar--menus">
-                <WeeksDropDown className="navbar--weeks"/>
-                <GlossaryButton className="navbar--glossary"/>
-                <PracticeLinksButton className="navbar--practice-links"/>
+                <WeeksDropDown className="navbar--weeks" />
+                <GlossaryButton className="navbar--glossary" />
+                <PracticeLinksButton className="navbar--practice-links" />
             </div>
-        </div>        
+        </div>
     );
 }
 

@@ -3,11 +3,10 @@
 //2. useEffect to fetch the results of the search from the
 //   API using map with 'term' as the props being passed 
 //   within the Resource Card component 
-
-import React from "react"; 
+ 
+import React, { useEffect, useState } from "react";
 import ResourceCard from "./Components/ResourceCard/ResourceCard"
 import Footer from "./Components/Footer/Footer"
-import { useEffect, useState } from "react"
 
 export function Content() {
   const [resources, setResources] = useState([]);
@@ -33,7 +32,6 @@ export function Content() {
   const seen = []
   return (
     <div>
-      {/* <NavBar/> */}
       <h1 className="page--header">Click on the week to see resources from... </h1>
       <button className="week--button" onClick={() => { handleClick(1) }}>Week 1</button>
       <button className="week--button" onClick={() => { handleClick(2) }}>Week 2</button>
