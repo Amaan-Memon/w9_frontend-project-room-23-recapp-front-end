@@ -21,6 +21,8 @@
 
  - **SETTING UP**
 
+    *This is a step-by-step guide to setting up the app so that you can use its functionality as intended.*
+
     * *CREATING THE DATABASE*
 
         For security purposes, we do not include our database credentials, so you will need to create your own. We recommend using Heroku Postgres, which you can read more about [here](https://devcenter.heroku.com/articles/heroku-postgresql).
@@ -114,13 +116,13 @@
     ---
     * *SPINNING UP THE SERVER*
 
-        I'm not sure if that's the correct terminology, but *spinning up* sounds cool.
+        (I'm not sure if that's the correct terminology, but *spinning up* sounds cool.)
 
         Anyways, type
-
         ```
         npm run dev
         ```
+
         in your terminal. You should be told that 
         ```
         server is listening on port 5500
@@ -140,28 +142,43 @@
 
         http://localhost:5500/glossary
 
-        And that's the back-end set up, folks! Check out the back-end section later in the docs for more information on our CRUD routes- for now, familiarise yourself with our folder structure.
+        And that's the back-end set up, folks!
+        
+        Check out the back-end section later in the docs for more information on our CRUD routes- for now, familiarise yourself with our folder structure.
         Try to find out what the other routes are and see what they return when you visit them in the browser.
 
         Once you're feeling confident, head on to the next section to get your front-end up and running!
     ---
     * *SETTING UP THE FRONT-END*
-        Assuming you are still in the backend folder in your terminal, navigate into the other folder, *recapp-app*, and install the node modules
+
+        Make sure the server is still running on the backend, and listening on port 5500.
+
+        You'll want to create a separate terminal, which will by default be in the root folder.
+
+        In the terminal, navigate to your front-end folder, *recapp-app*, and install the node modules
+
         ```
-        cd ../recapp-app
+        cd recapp-app
         ```
         ```
         npm i
         ```
 
+        Once everything is installed, you can type
 
- * Running the backend
- * Starting the frontend
+        ```
+        npm start
+        ```
+        Which will open a new tab in your browser, and the App in development mode.
 
+        You can now edit the code, and you can refresh the browser to see you changes immediately.
 
- - FRONT END 
+        Happy coding! 🥳
+---
 
+ - **FRONT END**
 
- - BACK END
+---
+ - **BACK END**
 
 
