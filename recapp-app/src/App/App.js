@@ -15,7 +15,7 @@ function App() {
     <div className="App">
         <NavBar setUserValue = {setUserValue}/>
       <Routes>
-        <Route path="/" element={<Landing/>} />
+        <Route path="/" element={<Landing/>}  id= "landing"/>
         <Route path="/week" element={<Content/>} />
         <Route path="/search" element={<SearchResults userValue = {userValue}/>} />
         <Route path="/glossary" element={<Glossary/>} />

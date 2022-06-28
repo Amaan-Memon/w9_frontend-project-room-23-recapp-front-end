@@ -1,17 +1,17 @@
 import React from "react";
 import './Button.css'
-import {useNavigate} from "react-router-dom";
 
 function GlossaryButton() {
-    const navigate = useNavigate()
 
     return (
         <div >
-            <a href="">
-                <button onClick = {()=>{navigate('/glossary')}} className="glossary-button">Glossary
-                </button>
+            <a href="/glossary"className="glossary-button">Glossary  
             </a>
         </div>
     );
 }
 export default GlossaryButton;
+//refrector the button folder name to specifacify to it's origin.
+//change the button to href since it's not a button.
+//delete the reactNavigate function
+//
