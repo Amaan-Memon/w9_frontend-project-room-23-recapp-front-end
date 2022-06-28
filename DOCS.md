@@ -12,9 +12,10 @@
 
  - **PROJECT INFORMATION**
 
-    * Front-end created with React JS.
-    * Back-end uses Express, Nodemon, and PostgreSQL.
-    * To create, populate and test your database, we recommend using Heroku and Postman, but these are not neccessary.
+    * Front-end created with [React JS](https://beta.reactjs.org/).
+    * Back-end created with [Express](https://expressjs.com/), [Nodemon](https://nodemon.io/), and [PostgreSQL](https://www.postgresql.org/docs/).
+    * Tests written with [Jest](https://jestjs.io/docs/getting-started), [Supertest](https://www.npmjs.com/package/supertest), and [Cypress](https://docs.cypress.io/).
+    * To create, populate and test your database, we recommend using [Heroku](https://devcenter.heroku.com/categories/reference) and [Postman](https://learning.postman.com/docs/getting-started/introduction/), but these are not neccessary.
 
 ---
 
@@ -22,9 +23,7 @@
 
     * *CREATING THE DATABASE*
 
-        For security purposes, we do not include our database credentials, so you will need to create your own. We recommend using Heroku Postgres, which you can read more about here:
-
-        https://devcenter.heroku.com/articles/heroku-postgresql
+        For security purposes, we do not include our database credentials, so you will need to create your own. We recommend using Heroku Postgres, which you can read more about [here](https://devcenter.heroku.com/articles/heroku-postgresql).
 
         Create an account if you haven't already, create a new App, and select Heroku Postgres as an add-on. Then, from settings, access your Database Credentials. We will be using these later.
 
@@ -37,8 +36,10 @@
         In your terminal, navigate into the 'backend' folder, and install the required node modules.
 
         ```
-        noahaldhous$ cd backend
-        Noahs-MacBook-Air:backend noahaldhous$ npm i
+        cd backend
+        ```
+        ```
+        npm i
         ```
 
         This may take a few minutes, so feel free to lean back, check your phone- maybe look out the window wistfully.
@@ -61,7 +62,6 @@
         PGPORT = 1234
         ```
 
-
         Congratulations- your Database is now connected!
 
         **Just a heads up- Heroku is an amazing service for providing free Database hosting- but the trade-off is that the credentials will be randomly changed from time to time. Every time you come back to this app, just double check that your Heroku credentials match up with your .env file.**
@@ -76,11 +76,85 @@
         
         All you need to do is run them!
 
-        In your terminal, run the following scripts (you can find these in the package.json)
+        In your terminal, enter these commands (you can find these in the package.json)
+
+        ```
+        npm run db:createGlossaryTable
+        ```
+        ```
+        npm run db:createResourcesTable
+        ```
+        You should receive console.logs that these have been created.
+
+        And checking in Heroku, you should be able to see that your database now contains 2 tables.
+
+        We are almost done- next we need to populate these tables with data, so the App has something to fetch.
+    ---
+    * *POPULATING THE TABLES*
+
+        Open the **data.js** file that exists within the **backend/libs** folder.
+
+        You will find the basic objects that you are going to insert into the rows of your tables. 
+
+        Feel free to edit the values, or leave them as they are. 
+
+        In the **Back End** section of these docs, there will be more information about editing and updating your tables. 
+
+        Once this data is to your liking, simply paste these commands in your terminal-
+
+        ```
+        npm run db:populateGlossaryTable
+        ```
+        ```
+        npm run db:populateResourcesTable
+        ```
+        Again, you should receive console.logs that these have been successful. 
+
+        If you want to be sure that these rows have been added, you can check on Heroku using a [dataclip](https://devcenter.heroku.com/articles/dataclips#viewing-results). 
+    ---
+    * *SPINNING UP THE SERVER*
+
+        I'm not sure if that's the correct terminology, but *spinning up* sounds cool.
+
+        Anyways, type
+
+        ```
+        npm run dev
+        ```
+        in your terminal. You should be told that 
+        ```
+        server is listening on port 5500
+        ```
+
+        To confirm everything is working, open your browser and visit
+        
+        http://localhost:5500
+
+        You should see that the test route is working.
+
+        next, head to 
+
+        http://localhost:5500/resources
+
+        and
+
+        http://localhost:5500/glossary
+
+        And that's the back-end set up, folks! Check out the back-end section later in the docs for more information on our CRUD routes- for now, familiarise yourself with our folder structure.
+        Try to find out what the other routes are and see what they return when you visit them in the browser.
+
+        Once you're feeling confident, head on to the next section to get your front-end up and running!
+    ---
+    * *SETTING UP THE FRONT-END*
+        Assuming you are still in the backend folder in your terminal, navigate into the other folder, *recapp-app*, and install the node modules
+        ```
+        cd ../recapp-app
+        ```
+        ```
+        npm i
+        ```
 
 
- * Adding your credentials
- * Populating the Database
  * Running the backend
  * Starting the frontend
 
