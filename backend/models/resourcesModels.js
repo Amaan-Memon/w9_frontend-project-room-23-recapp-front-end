@@ -28,7 +28,7 @@ export async function getSearchedResources(userInput){
     return res.rows
 }
 
-//ADD A RESOURCE
+//ADD (POST) A RESOURCE
 export async function addResource(newResource) {
     console.log(newResource)
     const res = await pool.query(`INSERT INTO resources (link, topic, week, tags, value, relevant) VALUES ($1, $2, $3, $4, $5, $6) RETURNING *;`, [newResource.link, newResource.topic, newResource.week, newResource.tags, newResource.value, newResource.relevant]);
@@ -60,6 +60,3 @@ export async function addResource(newResource) {
       console.log(`resource deleted: ${res.rows}`)
       return res.rows;
     }
-
-
-//const res = await pool.query(`SELECT * FROM resources WHERE tags LIKE '%'||($1)||'%';`, [userInput])

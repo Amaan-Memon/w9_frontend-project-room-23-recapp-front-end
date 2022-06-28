@@ -68,6 +68,7 @@ resourcesRouter.get("/search", async function(req, res){
     res.status(200).json(responseObject);
 })
 
+//Replace a resource by id
 resourcesRouter.put("/:id", async function(req, res){
     const id = Number(req.params.id);
     const updatedResource = req.body;
@@ -78,6 +79,7 @@ resourcesRouter.put("/:id", async function(req, res){
    res.status(200).json(responseObject);
 })
 
+//Add a new resource
 resourcesRouter.post("/", async function(req, res){
     const newResource = req.body;
     console.log(req.body)
@@ -88,6 +90,7 @@ resourcesRouter.post("/", async function(req, res){
    res.status(200).json(responseObject);
 })
 
+//Delete a resource
 resourcesRouter.delete("/:id", async function(req, res){
     const id = Number(req.params.id);
     const responseObject = {

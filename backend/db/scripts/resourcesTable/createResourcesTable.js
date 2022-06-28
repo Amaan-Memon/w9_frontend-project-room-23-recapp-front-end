@@ -1,4 +1,4 @@
-import { pool, query } from "../index.js";
+import { pool, query } from "../../index.js";
 
 const sqlString = `CREATE TABLE IF NOT EXISTS resources (
     id INT PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
@@ -10,11 +10,11 @@ const sqlString = `CREATE TABLE IF NOT EXISTS resources (
     relevant BOOL
 );`;
 
-async function createTable () {
+async function createResourcesTable () {
     const result = await query(sqlString);
-    console.log("Created table");
+    console.log("Created resources table");
 };
 
-createTable();
+createResourcesTable();
 
 await pool.end();
