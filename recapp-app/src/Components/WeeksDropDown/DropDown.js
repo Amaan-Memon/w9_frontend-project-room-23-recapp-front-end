@@ -2,12 +2,12 @@ import React from "react";
 import { useNavigate } from "react-router";
 import './DropDown.css'
 
-export default function WeeksDropDown(){
+export default function WeeksDropDown() {
     const navigate = useNavigate()
-    return(
+    return (
         <div>
             <a>
-            <button className="weeks--dropdown" onClick = {()=>{navigate('/week')}}>Weeks</button>
+                <button className="weeks--dropdown" onClick={() => { navigate('/week') }}>Weeks</button>
             </a>
         </div>
     );

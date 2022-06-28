@@ -1,5 +1,4 @@
-import React from "react";
-import './App.css';
+import React, { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import {Landing} from "../Landing.js";
 import {Content} from "../WeekContent.js";
@@ -7,7 +6,6 @@ import {SearchResults} from "../SearchResults.js";
 import {Glossary} from "../Glossary.js";
 import {PracticeLinks} from "../PracticeLinks.js"
 import NavBar from "../Components/NavBar/NavBar";
-import {useState} from 'react';
 
 function App() {
   const [userValue, setUserValue] = useState('')

@@ -1,9 +1,7 @@
 body {
   background-color: #003566;
   background-image:
-      linear-gradient(
-        #004A8F, #000814
-      );
+    linear-gradient(#004A8F, #000814);
   height: 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -20,14 +18,14 @@ body {
 .text {
   font-size: 20px;
   font-family: Helvetica, sans-serif;
-  color:#ffd60a;
+  color: #ffd60a;
   text-align: center;
 }
 
 .quote--text {
   font-size: 20px;
   font-family: Helvetica, sans-serif;
-  color:#ffd60a;
+  color: #ffd60a;
   font-style: italic;
   margin-left: 10px;
   margin-right: 10px;
@@ -55,7 +53,7 @@ body {
 .page--text {
   font-size: 15px;
   font-family: Helvetica, sans-serif;
-  color:#ffd60a;
+  color: #ffd60a;
   margin-left: 45px;
   margin-top: 30px;
 }
@@ -64,7 +62,7 @@ body {
   cursor: pointer;
   font-size: 15px;
   font-family: Helvetica, sans-serif;
-  color:#ffd60a;
+  color: #ffd60a;
   margin-left: 45px;
   margin-top: 30px;
 }

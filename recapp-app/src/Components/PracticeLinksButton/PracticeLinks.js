@@ -1,5 +1,5 @@
 import React from "react";
-import {useNavigate} from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function PracticeLinksButton() {
     const navigate = useNavigate()
@@ -7,7 +7,7 @@ function PracticeLinksButton() {
     return (
         <div >
             <a href="">
-                <button onClick = {()=>{navigate('/practice-links')}} className="glossary-button">Practice
+                <button onClick={() => { navigate('/practice-links') }} className="glossary-button">Practice
                 </button>
             </a>
         </div>
