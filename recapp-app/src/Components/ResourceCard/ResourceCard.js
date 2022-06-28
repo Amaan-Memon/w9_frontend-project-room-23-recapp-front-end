@@ -1,3 +1,5 @@
+//Resource Card function passes props to each component
+
 import React from "react";
 import "./Card.css"
 

@@ -1,3 +1,9 @@
+//Weeks Content page:
+//1. NavBar
+//2. useEffect to fetch the results of the search from the
+//   API using map with 'term' as the props being passed 
+//   within the Resource Card component 
+
 import React from "react"; 
 import ResourceCard from "./Components/ResourceCard/ResourceCard"
 import Footer from "./Components/Footer/Footer"

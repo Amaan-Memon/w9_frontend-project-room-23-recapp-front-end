@@ -1,9 +1,17 @@
 //NavBar Component 
 //This component will have the following:
 //1. Logo
+//  - img tag with our logo
+//  - When clicked it redirects to the landing using useNavigate
+//   page using useNavigate router method 
 //2. Search Bar
-//3. Weeks drop down menu
+//  - custom component in '../SearchBar/SearchBar'
+//3. Weeks button 
+//  - When clicked redirects to Practice links page using useNavigate
 //4. Glossary button
+//  - When clicked redirects to Practice links page using useNavigate
+//5. Practice links button 
+//  - When clicked redirects to Practice links page using useNavigate
 
 import React from 'react';
 import { useNavigate } from 'react-router';

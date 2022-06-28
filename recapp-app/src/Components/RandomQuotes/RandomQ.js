@@ -1,3 +1,6 @@
+// useEffect to fetch a quote from the API and set
+// the quote and author displayed on the landing page
+
 import React from "react";
 import {useEffect, useState} from "react";
 
