@@ -20,6 +20,15 @@ function SearchBar({ setUserValue }) {
         navResults()
     }
 
+    const handleKey = (e)=>{
+        if(e.key === 'Enter'){
+        setUserValue(query.toLowerCase())
+
+        setUrl(`http://localhost:5500/resources/search?tags=${query}`)
+        async function navResults() { navigate('/search',) }
+        navResults()}
+    }
+
     useEffect(() => {
         async function getData() {
             const response = await fetch(url);
@@ -35,7 +44,7 @@ function SearchBar({ setUserValue }) {
 
     return (
         <div className='searchbar--wrapper'>
-            <input onChange={handleChange} className=" searchbar" type="text" placeholder="Search resources..." />
+            <input onChange={handleChange} onKeyDown={handleKey} className=" searchbar" type="text" placeholder="Search resources..." />
             <button onClick={handleClick} className="searchbar--button" >Search</button>
         </div>
     );
