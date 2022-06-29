@@ -15,6 +15,12 @@
     margin-left: 80px;
 }
 
+.topic:hover {
+    transition: 0.4s ease-in-out;
+    background-color: #ffd60a;
+    color: #001d3d;
+}
+
 .resources {
     font-size: 15px;
     font-weight: 300;

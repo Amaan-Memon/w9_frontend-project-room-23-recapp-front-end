@@ -78,6 +78,12 @@ body {
   margin-left: 25px;
 }
 
+.week--button:hover {
+  transition: 0.4s ease-in-out;
+  background-color: #ffd60a;
+  color: #001d3d;
+}
+
 .logo {
   cursor: pointer;
 }
