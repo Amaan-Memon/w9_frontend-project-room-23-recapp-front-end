@@ -11,12 +11,8 @@ import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './SearchBar.css';
 
-<<<<<<< HEAD
-function SearchBar({setUserValue}) {
-=======
 
 function SearchBar({ setUserValue }) {
->>>>>>> 7c8e3c1f835ed7dfb6b2128d844ec156c234a52e
     const navigate = useNavigate();
     const [data, setData] = useState([]);
     console.log(data)
