@@ -11,6 +11,7 @@ import Footer from "./Components/Footer/Footer";
 
 export function SearchResults({ userValue }) {
   const [results, setResults] = useState([]);
+  const [resultsMessage, setResultsMessage] = useState(`Showing results for '${userValue}'...`)
 
   useEffect(() => {
     console.log(userValue);
@@ -25,13 +26,14 @@ export function SearchResults({ userValue }) {
     } catch (error) {
 
     }
+    setResultsMessage(`Showing results for '${userValue.replace(/[^0-9a-z]/gi, '')}'...`)
   }, [userValue]);
 
   const seen = []
   return (
     <div>
       <h2 className="page--header">Search Results:</h2>
-      <h4 className="page--text">You searched for "{userValue}"...</h4>
+      <h4 className="page--text">{resultsMessage}</h4>
       <div>
         {
           results.map(function (term) {
