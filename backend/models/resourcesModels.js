@@ -23,6 +23,8 @@ export async function getSearchedResources(userInput){
     if(userInput === null){
         return "Search result does not exist"
     }
+    userInput = userInput.replace(/[^0-9a-z]/gi, '')
+    console.log(`Search for ${userInput}`)
     const res = await pool.query(`SELECT * FROM resources WHERE tags LIKE '%${userInput}%'`)
     console.log(`returned resources matching search: ${JSON.stringify(res.rows)}`)
     return res.rows
