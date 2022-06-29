@@ -8,7 +8,7 @@ const sqlString = `CREATE TABLE IF NOT EXISTS glossary (
 
 async function createGlossaryTable () {
     const result = await query(sqlString);
-    console.log("Created glossary table");
+    console.log(`Created glossary table`);
 };
 
 createGlossaryTable();
