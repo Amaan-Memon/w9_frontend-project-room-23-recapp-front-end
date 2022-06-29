@@ -1,6 +1,6 @@
-# Welcome to the RECAPP Docs!
+# **Welcome to the RECAPP Docs!**
 
- - **INTRO**
+ - ## Introduction
     
     Greetings! This is the documentation for Recapp, an application created to provide useful resources and information for School of Code Bootcampers who may be feeling overwhelmed by the immensity of information available on the internet. 
     
@@ -10,7 +10,7 @@
 
 ---
 
- - **PROJECT INFORMATION**
+ - ## Project Information
 
     * Front-end created with [React JS](https://beta.reactjs.org/).
     * Back-end created with [Express](https://expressjs.com/), [Nodemon](https://nodemon.io/), and [PostgreSQL](https://www.postgresql.org/docs/).
@@ -19,11 +19,11 @@
 
 ---
 
- - **SETTING UP**
+ - ## Setting Up
 
     *This is a step-by-step guide to setting up the app so that you can use its functionality as intended.*
 
-    * *CREATING THE DATABASE*
+    * ### *CREATING THE DATABASE*
 
         For security purposes, we do not include our database credentials, so you will need to create your own. We recommend using Heroku Postgres, which you can read more about [here](https://devcenter.heroku.com/articles/heroku-postgresql).
 
@@ -31,7 +31,7 @@
 
     ---
 
-    * *CONNECTING YOUR DATABASE* 
+    * ### *CONNECTING YOUR DATABASE* 
 
         Clone this repository and open it up in your favourite code editor. Our project is split into two main folders: 'backend' and 'recapp-app'.
 
@@ -70,7 +70,7 @@
         
     ---
 
-    * *CREATING YOUR TABLES*
+    *  ### *CREATING YOUR TABLES*
     
         Your database is now connected to the server- but you don't have any tables in the database yet. 
 
@@ -92,7 +92,7 @@
 
         We are almost done- next we need to populate these tables with data, so the App has something to fetch.
     ---
-    * *POPULATING THE TABLES*
+    * ### *POPULATING THE TABLES*
 
         Open the **data.js** file that exists within the **backend/libs** folder.
 
@@ -114,7 +114,7 @@
 
         If you want to be sure that these rows have been added, you can check on Heroku using a [dataclip](https://devcenter.heroku.com/articles/dataclips#viewing-results). 
     ---
-    * *SPINNING UP THE SERVER*
+    * ### *SPINNING UP THE SERVER*
 
         (I'm not sure if that's the correct terminology, but *spinning up* sounds cool.)
 
@@ -149,7 +149,7 @@
 
         Once you're feeling confident, head on to the next section to get your front-end up and running!
     ---
-    * *SETTING UP THE FRONT-END*
+    * ### *SETTING UP THE FRONT-END*
 
         Make sure the server is still running on the backend, and listening on port 5500.
 
@@ -177,19 +177,16 @@
 ---
 
 
+* ## Front End
 
-## Front End
+    - ### React
 
----
+        The front end was created using React as a framework. React is a JavaScript library for building user interfaces:
 
-### React
+     - Declarative: React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes. Declarative views make your code more predictable, simpler to understand, and easier to debug.
+     - Component-Based: Build encapsulated components that manage their state, then compose them to make complex UIs. Since component logic is written in JavaScript instead of templates, you can easily pass rich data through your app and keep the state out of the DOM.
 
-The front end was created using React as a framework. React is a JavaScript library for building user interfaces:
-
-- Declarative: React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes. Declarative views make your code more predictable, simpler to understand, and easier to debug.
-- Component-Based: Build encapsulated components that manage their state, then compose them to make complex UIs. Since component logic is written in JavaScript instead of templates, you can easily pass rich data through your app and keep the state out of the DOM.
-
-Get started with [React](https://reactjs.org/docs/getting-started.html).
+        Get started with [React](https://reactjs.org/docs/getting-started.html).
 
 ---
 
