@@ -1,10 +1,3 @@
-//Search Results page:
-//1. NavBar
-//2. useEffect to fetch the results of the search from the
-//   API using map with 'term' as the props being passed 
-//   within the Resource Card component 
-
-
 import React, { useState, useEffect } from "react";
 import ResourceCard from "./Components/ResourceCard/ResourceCard";
 import Footer from "./Components/Footer/Footer";
@@ -37,8 +30,9 @@ export function SearchResults({ userValue }) {
       <div>
         {
           results.map(function (term) {
-            if (seen.includes(term.topic + term.week)) return
-            seen.push(term.topic + term.week)
+            if (seen.includes(term.topic + term.week)) {
+            return seen.push(term.topic + term.week)
+            }
             return (
               <ResourceCard
                 key={term.id}
