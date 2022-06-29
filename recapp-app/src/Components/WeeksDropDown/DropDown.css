@@ -9,3 +9,9 @@
     text-decoration: underline;
     cursor: pointer;
 }
+
+.weeks--dropdown:hover {
+    transition: 0.4s ease-in-out;
+    background-color: #ffd60a;
+    color: #001d3d;
+}

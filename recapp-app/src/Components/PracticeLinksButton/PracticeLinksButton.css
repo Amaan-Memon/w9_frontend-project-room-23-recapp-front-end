@@ -1,4 +1,4 @@
-.glossary-button {
+.practice-links-button {
     height: 50px;
     width: 100px;
     background-color: transparent;
@@ -10,7 +10,7 @@
     cursor: pointer;
 }
 
-.glossary-button:hover {
+.practice-links-button:hover {
     transition: 0.4s ease-in-out;
     background-color: #ffd60a;
     color: #001d3d;
