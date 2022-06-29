@@ -13,7 +13,7 @@ const resourcesRouter = express.Router();
 
 //Get all resources
 resourcesRouter.get("/", async function(req, res){
-    console.log(`get request for `)
+    console.log(`GET request for all resource links`)
     const responseObject = {
         success: true,
         message: 'returned all Resources',
@@ -36,7 +36,7 @@ resourcesRouter.get("/", async function(req, res){
 
 // Get resources by week
 resourcesRouter.get("/week/:num", async function(req, res){
-    console.log(`get request for resources in week ${req.params.num}`)
+    console.log(`GET request for resources in week ${req.params.num}`)
     if( isNaN(req.params.num) ){
         console.log(`Error: ${req.params.num} is not a number!`)
        const responseObject = {
@@ -46,7 +46,6 @@ resourcesRouter.get("/week/:num", async function(req, res){
        res.status(400).json(responseObject)
        return;
     }
-    console.log(`${req.params.num} is a number!`)
     const week = Number(req.params.num);
     const responseObject = {
         success: true,
